@@ -82,7 +82,12 @@ class SongDatabase:
             directory: Path to a directory containing .wav files
         """
         # TODO: Implement index_directory
-        raise NotImplementedError("Implement index_directory()")
+        for file in os.listdir(directory).sort():
+            sorted_files = sorted(files)
+
+        for file in sorted_files:
+            if file.endswith(".wav"):
+                self.index_song(file)
 
     # ------------------------------------------------------------------ #
     # Serialization — YOU IMPLEMENT THESE
