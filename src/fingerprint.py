@@ -317,3 +317,4 @@ def fingerprint_audio(audio, sample_rate=SAMPLE_RATE):
     _, _, spec = compute_spectrogram(audio, sample_rate)
     peaks = find_peaks(spec)
     return generate_fingerprints(peaks)
+#
