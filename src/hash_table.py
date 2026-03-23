@@ -1,6 +1,5 @@
 import math
 
-from matplotlib.typing import CapStyleType
 
 """
 Custom hash table with separate chaining.
